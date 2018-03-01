@@ -8,6 +8,7 @@ luma.core==1.6.0
 luma.oled==2.3.1
 mccabe==0.6.1
 Pillow==5.0.0
+requests==2.14.2
 six==1.11.0
 smbus2==0.2.0
 tsl2561==3.3
