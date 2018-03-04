@@ -1,7 +1,5 @@
 Get temperature, humidity and luminosity sensor values on Raspberry Pi and print it to the 128x64 OLED display and also upload them to an API endpoint.
 
-## Client
-
 Simple Python script based on libraries for interacting with the sensors.
 
 __Hardware:__
@@ -17,6 +15,4 @@ __Python libraries:__
 - [tsl2561](https://github.com/sim0nx/tsl2561) 
 - [luma.oled](https://github.com/rm-hull/luma.oled)
 
-## Server
-
-Node.js + express + MongoDB + Passport
+[Here's a simple server](https://github.com/somiandras/pi-sensors-server) for uploading, storing and retrieving the data.
