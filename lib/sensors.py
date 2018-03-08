@@ -1,5 +1,6 @@
 from lib.am2320 import AM2320
 from tsl2561 import TSL2561
+import Adafruit_ADS1x15
 
 
 def read_sensors():
@@ -11,5 +12,9 @@ def read_sensors():
     # Get luminosity from TSL2561
     tsl = TSL2561(debug=1)
     lux = tsl.lux()
+
+    # Get soil moisture from soil hygrometer + ADS1015
+    adc = Adafruit_ADS1x15.ADS1015()
+    soil = adc.read_adc(0, gain=1)
 
     return (temp, humi, lux, soil)
